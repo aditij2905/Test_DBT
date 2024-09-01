@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: LOOK_ECOMMERCE
+    database: LOOK_ECOMMERCE
+    schema: ECOMMERCE
+    tables:
+      - name: orders
+      - name: order_items
+      - name: products
+      - name: users
