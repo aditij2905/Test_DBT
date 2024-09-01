@@ -1,0 +1,1 @@
+SELECT * FROM raw.jaffle_shop.tasty_bites_menu

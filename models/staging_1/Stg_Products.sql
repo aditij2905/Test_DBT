@@ -1,0 +1,1 @@
+select * from {{source('LOOK_ECOMMERCE','products')}}
