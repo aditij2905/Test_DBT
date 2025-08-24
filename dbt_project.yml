@@ -40,3 +40,13 @@ models:
     +materialized: view
   STG_2:
     +materialized: table
+
+snapshots:
+  my_project:
+    +target_schema: snapshots
+
+seeds:
+  my_project:
+    country_codes:
+      schema: utils
+      quote_columns: false

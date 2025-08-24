@@ -1,5 +1,10 @@
+
+
 with CTE as (
-select product_id,sum(sale_price)as total_amount 
+select 
+product_id,
+sum(sale_price)as total_amount,
+{{get_quarter('ctm_odate')}} As order_quarter
 from {{ref('order_items_STG_2')}}
 where status not in ('Cancelled', 'Returned')
 group by product_id
